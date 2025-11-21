@@ -91,6 +91,7 @@ jobs:
           git clone -b $VERSION https://github.com/SagerNet/sing-box
           cd sing-box
           go build -tags with_utls,with_quic,with_gvisor,with_dhcp,with_acme,with_wireguard,with_grpc,with_clash_api,with_v2ray_api,with_tailscale \
+          -v -trimpath -ldflags "-X 'github.com/sagernet/sing-box/constant.Version=${VERSION}' -s -w -buildid=" \
           -o sing-box ./cmd/sing-box
           cd ..
 
