@@ -1,9 +1,6 @@
 name: Release S-UI
 
 on:
-  push:
-    tags:
-      - "*"
   workflow_dispatch:
 
 jobs:
