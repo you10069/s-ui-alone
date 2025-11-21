@@ -33,7 +33,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/you10069/s-ui-alone/master/ins
 **Step 1:** To install your desired legacy version, add the version to the end of the installation command. e.g., ver `1.0.0`:
 
 ```sh
-bash <(curl -Ls https://raw.githubusercontent.com/you10069/s-ui-alone/master/install.sh) 1.0.0
+bash <(curl -Ls https://raw.githubusercontent.com/you10069/s-ui-alone/master/install.sh) 1.1.0
 ```
 
 ## Uninstall S-UI
