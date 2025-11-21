@@ -1,4 +1,4 @@
-name: Release S-UI
+name: Release S-UI 2
 
 on:
   workflow_dispatch:
