@@ -24,8 +24,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           cache: false
-          go-version: ^1.23
-#          go-version-file: backend/go.mod
+          go-version-file: backend/go.mod
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -90,8 +89,7 @@ jobs:
           export VERSION=v1.11.12
           git clone -b $VERSION https://github.com/SagerNet/sing-box
           cd sing-box
-#          go build -tags with_utls,with_quic,with_gvisor,with_dhcp,with_ech,with_acme,with_reality_server,with_wireguard,with_grpc,with_clash_api,with_v2ray_api \
-          go build -tags with_utls,with_quic,with_gvisor,with_dhcp,with_acme,with_wireguard,with_grpc,with_clash_api,with_v2ray_api,with_tailscale \
+          go build -tags with_utls,with_quic,with_gvisor,with_dhcp,with_ech,with_acme,with_reality_server,with_wireguard,with_grpc,with_clash_api,with_v2ray_api \
           -o sing-box ./cmd/sing-box
           cd ..
 
