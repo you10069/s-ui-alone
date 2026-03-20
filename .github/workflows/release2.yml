@@ -90,7 +90,7 @@ jobs:
           fi
 
           #### Build Sing-Box
-          export VERSION=v1.12.25
+          export VERSION=v1.12.24
           git clone -b $VERSION https://github.com/SagerNet/sing-box
           cd sing-box
           go build -tags with_utls,with_quic,with_gvisor,with_dhcp,with_acme,with_wireguard,with_grpc,with_clash_api,with_v2ray_api,with_tailscale \
@@ -118,7 +118,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          tag: 1.1.3
+          tag: 1.1.4
           file: s-ui-linux-${{ matrix.platform }}.tar.gz
           asset_name: s-ui-linux-${{ matrix.platform }}.tar.gz
           prerelease: true
